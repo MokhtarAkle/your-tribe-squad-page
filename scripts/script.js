@@ -29,9 +29,8 @@ function searchTest(){
     var figcap = ul.querySelectorAll("figcaption");
     var fig = ul.querySelectorAll("figure");
 
-    console.log("figcap", figcap.length);
     for(i = 0; i < figcap.length; i++){
-        a = figcap[i].getElementsByTagName("a")[0];
+        a = figcap[i].querySelectorAll("a")[0];
         txtValue = a.textContent || a.innerText;
         if(txtValue.toUpperCase().indexOf(filter) > -1){
             figcap[i].style.display = "";
