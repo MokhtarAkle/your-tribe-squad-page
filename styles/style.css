@@ -211,6 +211,10 @@ figure {
     ul {
         grid-template-columns: repeat(3, 1fr);
     }
+    div > p:nth-of-type(1) {
+      width: 38em;
+    }
+
 }
 
 @media screen and (max-width: 1140px){
@@ -227,6 +231,21 @@ figure {
     ul {
         grid-template-columns: repeat(2, 1fr);
     }
+    div > p:nth-of-type(1) {
+      width: 30em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+  ul {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  div > p:nth-of-type(1) {
+    width: 25em;
+  }
+  #info-text{
+    font-size: 1.1em;
+  }
 }
 
 @media screen and (max-width: 590px) {
@@ -234,4 +253,22 @@ figure {
         grid-template-columns: repeat(1, 1fr);
         gap: 0px;
     }
+
+    div > p:nth-of-type(1) {
+      width: 23em;
+    }
+    #info-text{
+      font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+ 
+
+  div > p:nth-of-type(1) {
+    width: 19em;
+  }
+  #info-text{
+    font-size: .8em;
+  }
 }
